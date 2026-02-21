@@ -1,0 +1,49 @@
+/* App-specific styles */
+
+/* Smooth scroll for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(35, 30%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(35, 20%, 75%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(35, 20%, 60%);
+}
+
+/* Selection color */
+::selection {
+  background: hsl(15, 45%, 35%, 0.2);
+  color: hsl(25, 25%, 15%);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid hsl(15, 45%, 35%);
+  outline-offset: 2px;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent text selection on interactive elements */
+button,
+a {
+  -webkit-user-select: none;
+  user-select: none;
+}
